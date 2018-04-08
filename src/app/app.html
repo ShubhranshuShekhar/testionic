@@ -20,41 +20,57 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-content class="menu_items">
+  <ion-content>
 
-    <ion-list>
-
-
-    <button ion-item>
+    <ion-list class="menu_wrapper">
+      <button ion-item>
+        <ion-icon name="home" class="menu_icon" color="primary"></ion-icon>
         Home
       </button>
 
-
       <button ion-item>
+        <ion-icon name="notifications" class="menu_icon"></ion-icon>
+        Notifications
+      </button>
+      <button ion-item>
+        <ion-icon name="timer" class="menu_icon"></ion-icon>
+        Time Table
+      </button>
+      <button ion-item>
+        <ion-icon name="bookmarks" class="menu_icon"></ion-icon>
         Diary
       </button>
       <button ion-item>
+        <ion-icon name="book" class="menu_icon"></ion-icon>
         Academics
       </button>
       <button ion-item>
+        <ion-icon name="flask" class="menu_icon"></ion-icon>
         Subjects
       </button>
       <button ion-item>
+        <ion-icon name="images" class="menu_icon"></ion-icon>
         Gallery
       </button>
       <button ion-item>
+        <ion-icon name="done-all" class="menu_icon"></ion-icon>
         Fees
       </button>
       <button ion-item>
+        <ion-icon name="call" class="menu_icon"></ion-icon>
         Contact Us
       </button>
       <button ion-item>
-        Settings
+
+        <ion-label>
+          <ion-icon name="settings" class="menu_icon" color="primary"></ion-icon>
+          Settings
+        </ion-label>
+
       </button>
 
     </ion-list>
   </ion-content>
-
 </ion-menu>
 
 <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
