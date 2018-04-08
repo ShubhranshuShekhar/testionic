@@ -2,15 +2,56 @@
 
   <ion-header>
     <ion-toolbar>
-      <ion-title>Pages</ion-title>
+      <ion-grid>
+        <ion-row row-center>
+          <ion-col col-8 col-bottom>
+            <div id="name" text-capitalize padding-top>
+              danerys targerian
+            </div>
+          </ion-col>
+          <ion-col col-4>
+            <div>
+              <img id="profilepic" src="../assets/imgs/student_70.png" />
+            </div>
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
     </ion-toolbar>
   </ion-header>
 
-  <ion-content>
+  <ion-content class="menu_items">
+
     <ion-list>
-      <button ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
+
+
+    <button ion-item>
+        Home
       </button>
+
+
+      <button ion-item>
+        Diary
+      </button>
+      <button ion-item>
+        Academics
+      </button>
+      <button ion-item>
+        Subjects
+      </button>
+      <button ion-item>
+        Gallery
+      </button>
+      <button ion-item>
+        Fees
+      </button>
+      <button ion-item>
+        Contact Us
+      </button>
+      <button ion-item>
+        Settings
+      </button>
+
     </ion-list>
   </ion-content>
 
