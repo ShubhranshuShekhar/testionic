@@ -1,6 +1,6 @@
 <ion-menu [content]="content">
 
-  <ion-header>
+  <ion-header class="menu_header">
     <ion-toolbar>
       <ion-grid>
         <ion-row row-center>
@@ -23,12 +23,12 @@
   <ion-content>
 
     <ion-list class="menu_wrapper">
-      <button ion-item>
+      <button ion-item class="menu_button">
         <ion-icon name="home" class="menu_icon" color="primary"></ion-icon>
         Home
       </button>
 
-      <button ion-item>
+      <button ion-item class="menu_button">
         <ion-icon name="notifications" class="menu_icon"></ion-icon>
         Notifications
       </button>
@@ -36,6 +36,7 @@
         <ion-icon name="timer" class="menu_icon"></ion-icon>
         Time Table
       </button>
+      <ion-item-divider></ion-item-divider>
       <button ion-item>
         <ion-icon name="bookmarks" class="menu_icon"></ion-icon>
         Diary
@@ -48,6 +49,7 @@
         <ion-icon name="flask" class="menu_icon"></ion-icon>
         Subjects
       </button>
+      <ion-item-divider></ion-item-divider>
       <button ion-item>
         <ion-icon name="images" class="menu_icon"></ion-icon>
         Gallery
@@ -56,12 +58,12 @@
         <ion-icon name="done-all" class="menu_icon"></ion-icon>
         Fees
       </button>
-      <button ion-item>
+      <button ion-item class="menu_lastitem">
         <ion-icon name="call" class="menu_icon"></ion-icon>
         Contact Us
       </button>
+      <ion-item-divider></ion-item-divider>
       <button ion-item>
-
         <ion-label>
           <ion-icon name="settings" class="menu_icon" color="primary"></ion-icon>
           Settings
